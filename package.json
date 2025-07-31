@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "build:gh-pages": "ng build --configuration production --aot --ssr=false && echo 'Build completed' && ls -la dist/ && echo 'Checking siceap folder' && ls -la dist/demo/ && echo 'Removing docs' && rm -rf docs && echo 'Creating docs' && mkdir -p docs && echo 'Copying files' && cp -r dist/demo/browser/* docs/ && echo 'Done!'"
   },
   "dependencies": {
     "@angular/animations": "^20.0.0",

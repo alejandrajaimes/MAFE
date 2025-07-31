@@ -22,14 +22,17 @@
               "namedChunks": false,
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false
+              "sourceMap": false,
+              "ssr": false,
+              "prerender": false
             }
           },
           "options": {
             "assets": [],
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "outputPath": "dist/demo",
+           "outputPath": "dist/demo",
+            "baseHref": "/MAFE/",
             "polyfills": ["zone.js"],
             "scripts": [],
             "styles": ["src/global_styles.css"],
